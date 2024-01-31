@@ -1,0 +1,99 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    @include flex(space-around,center);
+    height: 600px;
+    margin-top: 4%;
+    .card{
+
+        width: 30%;
+  &:hover{
+    h4{
+        color: red;
+        transition: 500ms;
+    }
+    .cardinfofoot{
+        
+        .redbutton3{
+            color: red;
+  background-color: transparent;
+  border: 2px solid red;
+  transition: 500ms;
+
+        }
+    }
+  }
+    .cardimg{
+        height: 300px;
+        width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    }
+    .cardinfo{
+        @extend %flex;
+        flex-direction: column;
+        .cardinfofoot{
+            display: flex;
+            @include flex(space-around,center);
+            gap:15px;
+            color: aqua;
+            .redbutton3{
+                width: 80px;
+                height: 50px;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}  }
+@media screen and (max-width:900px) {
+    .cards{
+        margin-bottom: 50%;
+        .card{
+            width: 45%;
+            margin-top: 5%;
+            .cardinfo{
+                h4{
+                    font-size: 18px;}
+                    p{
+                        font-size: 12px;
+                    }
+                    .cardinfofoot{
+               .redbutton3{
+                    height: 20px;
+                    width: 80px;
+
+h6{
+font-size: 10px;
+}  }              }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .cards{
+        .card{
+            width: 95%;
+            .cardinfo{
+                h4{
+                    font-size: 18px;}
+                    p{
+                        font-size: 12px;
+                    }
+                    .cardinfofoot{
+               .redbutton3{
+                    height: 20px;
+                    width: 80px;
+
+h6{
+font-size: 10px;
+}  }              }
+            }
+        }
+    }
+}
+@media screen and (max-width:300px) {
+    .cards{
+width:500px;
+    }
+}

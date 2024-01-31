@@ -1,0 +1,359 @@
+.ourassist{
+    height: max-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+display: flex;
+flex-direction: column;
+@include flex(start,center);
+padding-top: 3%;
+gap: 20px;
+.wehelp{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    @extend %flex;
+}
+.help{
+    width: 100%;
+    display: flex;
+    @include flex(space-around,center);
+    height: max-content;
+   margin-bottom: 10%;
+.purefood{
+    width: 28%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    @extend %flex;
+    gap:5px;
+    .purefoodinfo{
+        display: flex;
+        flex-direction: column;
+        @extend %flex;
+        color: beige;
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+.medicine{
+    width: 28%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    @extend %flex;
+    gap:5px;
+    .medicineinfo{
+        display: flex;
+        flex-direction: column;
+        @extend %flex;
+        color: beige;
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+.education{
+    width: 28%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    @extend %flex;
+    gap:5px;
+    .educationinfo{
+        display: flex;
+        flex-direction: column;
+        @extend %flex;
+        color: beige;
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+}
+}
+@media screen and (max-width:1200px) {
+    .ourassist{
+        padding-top: 2%;
+        .help{
+            .purefood{
+                .purefoodinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .medicine{
+                .medicineinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .education{
+                .educationinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .ourassist{
+        padding-top: 2%;
+        width:100%;
+        .help{
+            flex-direction: column;
+            .purefood{
+                .purefoodinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .medicine{
+                .medicineinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .education{
+                .educationinfo{
+                    h4{
+                        font-size: 16px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .ourassist{
+       .wehelp{
+        span{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 16px;
+
+        }
+       }
+        .help{
+            gap:10px;
+            .purefood{
+                height:  200px;
+                .purefoodimg{
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                    
+                }
+                
+                .purefoodinfo{
+                    h4{
+                        font-size: 14px;
+
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .medicine{
+                height:  200px;
+
+                .medicineimg{
+                    img{
+                        width:80px;
+                        height: 80px;  
+                    }
+                }
+                .medicineinfo{
+                    h4{
+                        font-size: 14px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .education{
+                height:  200px;
+
+                .educationimg{
+                    img{
+                        width:80px;
+                        height: 80px;  
+                    }}
+                .educationinfo{
+                    h4{
+                        font-size: 14px;
+                        margin-right: 3%;
+
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }}
+        }
+    }
+    @media screen and (max-width:500px) {
+        .ourassist{
+           .wehelp{
+            span{
+                font-size: 12px;
+            }
+            h3{
+                font-size: 14px;
+    
+            }
+           }
+            .help{
+               
+                .purefood{
+                    
+                    
+                    .purefoodinfo{
+                        h4{
+                            font-size: 12px;
+    
+                        }
+                        p{
+                            font-size: 8px;
+                        }
+                    }
+                }
+                .medicine{
+                   
+    
+                   
+                    .medicineinfo{
+                        h4{
+                            font-size: 12px;
+    
+                        }
+                        p{
+                            font-size: 8px;
+                        }
+                    }
+                }
+                .education{
+                    
+    
+                   
+                    .educationinfo{
+                        h4{
+                            font-size: 12px;
+    
+                        }
+                        p{
+                            font-size: 8px;
+                        }
+                    }
+                }}
+            }
+        }
+        @media screen and (max-width:500px) {
+            .ourassist{
+               .wehelp{
+                span{
+                    font-size: 10px;
+                }
+                h3{
+                    font-size: 12px;
+        
+                }
+               }
+                .help{
+                   
+                    .purefood{
+                        
+                        
+                        .purefoodinfo{
+                            h4{
+                                font-size: 10px;
+        
+                            }
+                            p{
+                                font-size: 6px;
+                            }
+                        }
+                    }
+                    .medicine{
+                       
+        
+                       
+                        .medicineinfo{
+                            h4{
+                                font-size: 10px;
+        
+                            }
+                            p{
+                                font-size: 6px;
+                            }
+                        }
+                    }
+                    .education{
+                        
+        
+                       
+                        .educationinfo{
+                            h4{
+                                font-size: 10px;
+        
+                            }
+                            p{
+                                font-size: 6px;
+                            }
+                        }
+                    }}
+                }
+            }
+        

@@ -1,0 +1,92 @@
+.latestblog {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15%;
+  }
+  
+  .latestblogword {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    height: 300px;
+    gap: 10px;
+    span {
+      color: aquamarine;
+      font-weight: 1000;
+    }
+  }
+  .home-demo{
+margin-top: 5%;
+margin-bottom: 5%;
+  }
+  .blogbutton {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 5px;
+    .rightblogbutton,
+    .leftblogbutton {
+      width: 40px;
+      height: 40px;
+      border: 2px solid black;
+      color: gray;
+      @extend %flex;
+      &:hover {
+        color: white;
+        background-color: red;
+        border: 0;
+      }
+    }
+  }
+  
+  .blogcards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 4%;
+  }
+  
+  .blogcard {
+    width: 100%;
+    
+  }
+  
+ 
+  
+  .blogcardimg {
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .blogcardinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    background-color: lightgray;
+    h4 {
+      &:hover {
+        color: red;
+        transition: 500ms;
+      }
+    }
+    a {
+      width: 120px;
+      height: 30px;
+      text-decoration: none;
+      color: red;
+      &:hover {
+        letter-spacing: 1px;
+      }
+    }
+    span {
+      display: block;
+      width: 80px;
+      height: 10px;
+      margin-right: 10%;
+      border-top: 1px solid red;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+.nav-link:hover {
+    color: aqua;
+}
+
+.makedonation{
+
+    gap:10px;
+    width:38%;
+    @extend %flex;
+    p{ 
+        margin-top: 5%;
+        color: aliceblue;
+        span{
+            text-decoration: underline;
+        }
+    }
+    .donation{
+        width:150px;
+height: 40px;
+border:2px solid red;
+background-color: red;
+@extend %flex;
+color: white;
+&:hover{
+background-color:  #263b5c;
+border:2px solid white;
+
+}
+    }}
+    @media screen and (max-width:1150px) {
+        .nav-link{
+            font-size: 25px;
+        }
+        .makedonation{
+            font-size: 12px;
+            width: 45%;
+            .donation{
+                height: 60px;
+                width: 200px;
+            }
+        }
+    }

@@ -1,0 +1,167 @@
+
+.aboutcards{
+  height: max-content;
+  margin-top: 4%;
+  .aboutcard{
+width: 98%;
+display: flex;
+flex-direction: row;
+gap:20px;
+.aboutcardimg{
+  display: flex;
+justify-content: center;
+align-items: center;
+  width: 60%;
+  img{
+      width: 450px;
+      height: 450px;
+      margin: 4% auto;
+  }
+}
+.aboutcardinfo{
+ width: 40%;
+            @extend %flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap:10px;
+            
+            span{
+              color: aqua;
+               font-size: 20px; 
+            }
+            h2{
+              font-size: 30px;
+            }
+            p{
+font-size: 24px;
+            }
+            
+  }
+}}
+@media screen and (max-width:1000px) {
+  .aboutcards{
+      .aboutcard{
+          .aboutcardimg{
+              img{
+                  width: 350px;
+                  height: 300px;
+              }
+          }
+          .aboutcardinfo{
+ 
+            
+              
+              span{
+                color: aqua;
+                 font-size: 16px; 
+              }
+              h2{
+                font-size: 20px;
+              }
+              p{
+font-size: 18px;
+              }
+              
+                
+               .redbutton2{
+font-size: 14px;
+               }
+
+    }
+}}
+      }
+
+      @media screen and (max-width:700px) {
+          .aboutcards{
+              .aboutcard{
+              flex-direction: column;
+
+                  .aboutcardimg{
+                      justify-content: center;
+                      align-items: center;
+                      width: 100%;
+                      img{
+                          width: 350px;
+                          height: 300px;
+                      }
+                  }
+                  .aboutcardinfo{
+         width: 100%;
+                    margin-bottom: 2%;
+                      
+                      span{
+                         font-size: 16px; 
+                      }
+                      h2{
+                        font-size: 20px;
+                      }
+                      p{
+        font-size: 18px;
+                      }
+                    
+                        
+                      
+                       .redbutton2{
+      font-size: 14px;
+                       }
+        
+            }
+        }}
+              }
+              @media screen and (max-width:800px) {
+                  .aboutcards{
+                      width:100%;
+                      .aboutcard{
+                      flex-direction: column-reverse;
+                      .aboutcardimg{
+                              
+                             
+                              width: 100%;
+                              
+                          }
+                          .aboutcardinfo{
+                 width: 100%;
+                            margin-bottom: 2%;
+                              
+                          }
+                }}
+                      }
+              @media screen and (max-width:350px) {
+                  .aboutcards{
+                      .aboutcard{
+                     
+      width: 80%;
+                          .aboutcardimg{
+                             
+                              width: 120%;
+                              img{
+                                  width: 250px;
+                                  height: 200px;
+                              }
+                          }
+                          .aboutcardinfo{
+                 width: 120%;
+                          
+                            margin: 0 auto 3% auto;
+                              span{
+                                
+                                 font-size: 12px; 
+                              }
+                              h2{
+                                font-size: 18px;
+                              }
+                              p{
+                font-size: 12px;
+                              }
+                             
+                               .redbutton2{
+              font-size: 10px;
+                               }
+                }
+                    }
+                }}
+                      
+              
+              
+      

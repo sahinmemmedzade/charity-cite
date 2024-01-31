@@ -1,0 +1,180 @@
+.helpingtodaycards{
+   
+    height: max-content;
+    margin-top: 4%;
+    .helpingtodaycard{
+width: 100%;
+display: flex;
+gap: 10px;
+flex-direction: row;
+gap:20px;
+.helpingtodayimg{
+    display: flex;
+justify-content: center;
+align-items: center;
+    width: 60%;
+    img{
+        width: 340px;
+        height: 400px;
+        margin: 4% auto;
+    }
+}
+.helpingtodaycardinfo{
+   
+              @extend %flex;
+              flex-direction: column;
+              gap:10px;
+              justify-content: center;
+              align-items: start;
+              span{
+                color: aqua;
+                 font-size: 20px; 
+              }
+              h2{
+                font-size: 30px;
+              }
+              p{
+font-size: 24px;
+              }
+              .button{
+                display: flex;
+              width: 60%;
+               justify-content: space-between;
+               gap:30px;
+               
+}
+    }
+}}
+@media screen and (max-width:1000px) {
+    .helpingtodaycards{
+        .helpingtodaycard{
+            .helpingtodayimg{
+                img{
+                    width: 280px;
+                    height: 300px;
+                }
+            }
+            .helpingtodaycardinfo{
+   
+              
+                
+                span{
+                  color: aqua;
+                   font-size: 16px; 
+                }
+                h2{
+                  font-size: 20px;
+                }
+                p{
+  font-size: 18px;
+                }
+                .button{
+                  
+                 .redbutton3{
+font-size: 14px;
+                 }
+  }
+      }
+  }}
+        }
+       
+        @media screen and (max-width:900px )  {
+            .helpingtodaycards{
+                .helpingtodaycard{
+flex-direction: column;
+margin-top: 10%;
+                    .helpingtodayimg{
+                        justify-content: center;
+                        align-items: center;
+                       width: 100%;
+                        
+                        margin-top: 10%;
+                        img{
+                            width: 350px;
+                            height: 300px;
+                        }
+                    }
+                    .helpingtodaycardinfo{
+           width: 100%;
+                      margin-bottom: 2%;
+                        
+                        span{
+                           font-size: 16px; 
+                        }
+                        h2{
+                          font-size: 20px;
+                        }
+                        p{
+          font-size: 18px;
+                        }
+                        .button{
+                          
+                        
+                         .redbutton3{
+        font-size: 14px;
+                         }
+          }
+              }
+          }}
+                }
+                @media screen and (max-width:740px )  {
+                    .helpingtodaycards{
+                        .helpingtodaycard{
+        flex-direction: column;
+        margin-top: 20%;
+                        }}
+                        }
+
+       @media screen and (max-width:600px )  {
+            .helpingtodaycards{
+                .helpingtodaycard{
+flex-direction: column;
+margin-top: 150%;
+                    .helpingtodayimg{
+                        justify-content: center;
+                        align-items: center;
+                       width: 100%;
+                        
+                        margin-top: 10%;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                        }
+                    }
+                    .helpingtodaycardinfo{
+        
+                        
+                        span{
+                           font-size: 12px; 
+                        }
+                        h2{
+                          font-size: 16px;
+                        }
+                        p{
+          font-size: 16px;
+                        }
+                        .button{
+                          
+                        
+                         .redbutton3{
+        font-size: 10px;
+                         }
+          }
+              }
+          }}
+                }       
+                @media screen and (max-width:400px )  {
+                    .helpingtodaycards{
+                        .helpingtodaycard{
+        flex-direction: column;
+        margin-top: 250%;              }}}
+        @media screen and (max-width:500px )  {
+            .helpingtodaycards{
+                .helpingtodaycard{
+flex-direction: column;
+margin-top: 210%;              }}}
+@media screen and (max-width:400px )  {
+    .helpingtodaycards{
+        .helpingtodaycard{
+flex-direction: column;
+margin-top: 250%;              }}}
